@@ -1,0 +1,47 @@
+
+
+  
+  .autocomplete-wrapper {
+    position: relative;
+    
+    input {
+      width: 100%;
+    }
+  }
+  .autocomplete-results {
+    position: absolute;
+    background: white;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    font-size: 13px;
+    border: solid 1px #ddd;
+    border-top-width: 0;
+    border-bottom-color: #ccc;
+    box-shadow: 
+      0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .autocomplete-result {
+    padding: 12px 15px;
+    border-bottom: solid 1px #eee;
+    cursor: pointer;
+  }
+  
+  .autocomplete-result:last-child {
+    border-bottom-width: 0;
+  }
+  
+  .autocomplete-location {
+    opacity: .8;
+    font-size: smaller;
+  }
+  
+  
+    .autocomplete-results {
+      color: white;
+      background: #F78536;
+      border-bottom-color: #26C9FF;
+      outline: solid 1px darken(#26C9FF, 10%);
+    }
+  
