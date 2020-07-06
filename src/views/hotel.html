@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hotéis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<!-- CS Select -->
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-border.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+
+		{% include "partials/header.html" %}
+
+		<!-- end:header-top -->
+	
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/back_2.jpg);">
+				<div class="desc">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-5 col-md-5">
+								<!-- <a href="index.html" id="main-logo">Travel</a> -->
+								<div class="tabulation animate-box">
+
+								  <!-- Nav tabs -->
+								   <ul class="nav nav-tabs" role="tablist">
+								      
+								      <li role="presentation" class="active">
+								    	   <a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab">Hotéis</a>
+								      </li>
+								      
+								   </ul>
+
+								   <!-- Tab panes -->
+									<div class="tab-content">
+
+
+									<div role="tabpanel" class="tab-pane active" id="hotels">
+									 	<div class="row">
+											 <form action="/resultadosdabusca" method="get">
+												 <div class="col-xxs-12 col-xs-12 mt">
+												<div class="input-field">
+													<label for="from">Cidade:</label>
+													<input type="text" class="form-control" id="placescomplete" placeholder="Los Angeles, USA" name="cidade"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-start">Check-in:</label>
+													<input type="text" class="form-control" id="date-start" placeholder="dd/mm/yyyy" name="checkin"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-end">Check Out:</label>
+													<input type="text" class="form-control" id="date-end" placeholder="dd/mm/yyyy" name="checkout"/>
+												</div>
+											</div>
+											
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Adultos:</label>
+													<select class="cs-select cs-skin-border" name="adultos">
+														<option value="" disabled selected>0</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											
+											<div class="col-xs-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Procurar Hotel">
+												
+											</div>
+											 </form>
+											
+										</div>
+									 </div>
+
+
+									</div>
+
+								</div>
+							</div>
+							<div class="desc2 animate-box">
+								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
+									<h2>Encontre os melhores hotéis!</h2>
+									<h3>Aqui você vê bons lugares para ficar <br> <br> Com ótimos preços</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+
+		<div id="fh5co-destination">
+			<div class="tour-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<ul id="fh5co-destination-list" class="animate-box">
+							<li class="one-forth text-center" style="background-image: url(images/hotamsterda.jpg); ">
+								<a href="https://www.hoteis.com/de934558/hoteis-em-amsterda-holanda/">
+									<div class="case-studies-summary">
+										<h2>Hotel em Amsterdã</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/hotbertioga.jpg); ">
+								<a href="https://www.hoteis.com/de150349/hoteis-em-bertioga-brasil/">
+									<div class="case-studies-summary">
+										<h2>Hotel em Bertioga</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/hotbuzios.jpg); ">
+								<a href="https://www.hoteis.com/de134611/hoteis-em-buzios-brasil/">
+									<div class="case-studies-summary">
+										<h2>Hotel em Búzios</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/hotcancun.jpg); ">
+								<a href="https://www.hoteis.com/de837537/hoteis-em-cancun-mexico/">
+									<div class="case-studies-summary">
+										<h2>Hotel em Cancun</h2>
+									</div>
+								</a>
+							</li>
+
+							<li class="one-forth text-center" style="background-image: url(images/voosul.jpg); ">
+								<a href="https://www.hoteis.com/de134350/hoteis-em-curitiba-brasil/">
+									<div class="case-studies-summary">
+										<h2>Hotel em Curitiba</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-half text-center">
+								<div class="title-bg">
+									<div class="case-studies-summary">
+										<h2>Mais Procurados</h2>
+										
+									</div>
+								</div>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/voonordeste.jpg); ">
+								<a href="https://www.hoteis.com/de1634339/hoteis-em-fortaleza-brasil/">
+									<div class="case-studies-summary">
+										<h2>Hotel em Fortaleza</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/hotbarcelona.jpg); ">
+								<a href="https://www.hoteis.com/de444495/hoteis-em-barcelona-espanha/">
+									<div class="case-studies-summary">
+										<h2>Hotel em Barcelona</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/hotbombinhas.jpg); ">
+								<a href="https://www.hoteis.com/de159604/hoteis-em-bombinhas-brasil/">
+									<div class="case-studies-summary">
+										<h2>Hotel em Bombinhas</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/hotcabofrio.jpg); ">
+								<a href="https://www.hoteis.com/de133320/hoteis-em-cabo-frio-brasil/">
+									<div class="case-studies-summary">
+										<h2>Hotéis em Cabo Frio</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/hotcartagena.jpg); ">
+								<a href="https://www.hoteis.com/de295594/hoteis-em-cartagena-colombia/">
+									<div class="case-studies-summary">
+										<h2>Hotel em Cartagena</h2>
+									</div>
+								</a>
+							</li>
+						</ul>		
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+
+		{% include "partials/footer.html" %}
+
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Date Picker -->
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<!-- CS Select -->
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+
+	<!-- Para buscar cidades -->
+	<script>
+  		function activatePlacesSearch(){
+    		var input = document.getElementById('placescomplete');
+    		var autocomplete = new google.maps.places.Autocomplete(input);
+  		}
+	</script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHEJEkyBXkDGVfKvANDTooHcw-3EPmRrE&libraries=places&callback=activatePlacesSearch"></script>
+
+	
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

@@ -1,0 +1,86 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+  
+  padding: 10px;
+}
+
+.card {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.card img {
+    width: 255px;
+    height: 144px;
+
+    object-fit: cover;
+
+    
+}
+
+.card h1,h2,h3,h4,h5 {
+    margin: 10px 10px;
+}
+
+.card h6 {
+    margin: 5px 10px 0;
+}
+
+.card .nomehotel {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.card .breservar {
+    margin-left: auto;
+    margin-right: 10px;
+    
+}
+
+a.button{
+    display:inline-block;
+    height: 40px;
+    padding:0.35em 1.2em;
+    border:none;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    text-align: center;
+    background-color: #ec720e;
+    color:white;
+    
+    transition: all 0.2s;
+    }
+
+a.button:hover{
+    color:#ffffff;
+    background-color:#c45c07;
+}
+
+@media all and (max-width:30em){
+     a.button{
+    display:block;
+    margin:0.4em auto;
+     }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+      justify-content: center;
+    }
+  }

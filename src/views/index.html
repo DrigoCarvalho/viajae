@@ -62,29 +62,16 @@
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html"><i class="icon-airplane"></i>Viajaê</a></h1>
+					<h1 id="fh5co-logo"><a href="/"><i class="icon-airplane"></i>Viajaê</a></h1>
 					<!-- START menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="flight.html">Voos</a></li>
-							<li>
-								<a href="#" class="fh5co-sub-ddown">Destinos</a>
-								<ul class="fh5co-sub-menu">
-									<li><a href="#">Brasil</a></li>
-									<li><a href="#">América do Sul</a></li>
-									<li><a href="#">América do Norte</a></li>
-									<li><a href="#">África</a></li>
-									<li><a href="#">Ásia</a></li>
-									<li><a href="https://www.google.com/travel/explore?g2lb=202158%2C2502548%2C4258168%2C4260007%2C4270442%2C4274032%2C4305595%2C4306835%2C4317915%2C4319921%2C4322823%2C4328159%2C4329288%2C4364503%2C4366684%2C4371335%2C4373849%2C4381263%2C4385383%2C4386665%2C4395057%2C4395397%2C4395589%2C4270859%2C4284970%2C4291517%2C4316256%2C4356900&hl=pt-BR&gl=br&un=1&tfs=CBsQAxopag0IAhIJL20vMDIycGZtEgoyMDIwLTA3LTA4cgwIBBIIL20vMDJqOXoaKWoMCAQSCC9tLzAyajl6EgoyMDIwLTA3LTEycg0IAhIJL20vMDIycGZtcAFAAUgBmAEB&curr=BRL&authuser=0&origin=https%3A%2F%2Fwww.google.com&gsas=1">Europa</a></li>
-									<li><a href="#">Oceania</a></li>
-								</ul>
-							</li>
-							<li><a href="hotel.html">Hotéis</a></li>
-							<li><a href="pacotes.html">Pacotes</a></li>
+							<li class="active"><a href="/">Home</a></li>
+							<li><a href="/voos">Voos</a></li>
+							<li><a href="/hoteis">Hotéis</a></li>							
 							<li><a href="https://www.rentalcars.com/br" target="_blank">Carros</a></li>
 							<li><a href="https://getmalas.com.br/" target="_blank">Malas</a></li>
-							<li><a href="contact.html">Contato</a></li>
+							
 						</ul>
 					</nav>
 				</div>
@@ -110,9 +97,7 @@
 								      <li role="presentation">
 								    	   <a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab">Hotéis</a>
 								      </li>
-								      <li role="presentation">
-								    	   <a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Pacotes</a>
-								      </li>
+								      
 								   </ul>
 
 								   <!-- Tab panes -->
@@ -122,42 +107,32 @@
 											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
 													<label for="from">De:</label>
-													<input type="text" class="form-control autocomplete" id="from-place" placeholder="São Paulo, BRA"/>
+													<input type="text" class="form-control autocomplete" id="from-place" placeholder="São Paulo, BRA" value="GRU"/>
 												</div>
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
 													<label for="from">Para:</label>
-													<input type="text" class="form-control autocomplete" id="to-place" placeholder="Miami, USA"/>
+													<input type="text" class="form-control autocomplete" id="to-place" placeholder="Miami, USA" value="MIA"/>
 												</div>
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt alternate">
 												<div class="input-field">
 													<label for="date-start">Ida:</label>
-													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+													<input type="text" class="form-control" id="date-start" placeholder="dd/mm/yyyy" value="15/07/2020"/>
 												</div>
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt alternate">
 												<div class="input-field">
 													<label for="date-end">Volta:</label>
-													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+													<input type="text" class="form-control" id="date-end" placeholder="dd/mm/yyyy" value="23/07/2020"/>
 												</div>
 											</div>
-											<div class="col-sm-12 mt">
-												<section>
-													<label for="class">Classe:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>Econômica</option>
-														<option value="economy">Econômica</option>
-														<option value="first">Primeira</option>
-														<option value="business">Executiva</option>
-													</select>
-												</section>
-											</div>
+											
 											<div class="col-xxs-12 col-xs-6 mt">
 												<section>
 													<label for="class">Adultos:</label>
-													<select class="cs-select cs-skin-border">
+													<select class="cs-select cs-skin-border" id="adults">
 														<option value="" disabled selected>1</option>
 														<option value="1">1</option>
 														<option value="2">2</option>
@@ -169,7 +144,7 @@
 											<div class="col-xxs-12 col-xs-6 mt">
 												<section>
 													<label for="class">Crianças:</label>
-													<select class="cs-select cs-skin-border">
+													<select class="cs-select cs-skin-border" id="children">
 														<option value="" disabled selected>1</option>
 														<option value="0">0</option>
 														<option value="1">1</option>
@@ -180,46 +155,37 @@
 												</section>
 											</div>
 											<div class="col-xs-12">
-												<input type="submit" class="btn btn-primary btn-block" value="Procurar Voo">
+												<input type="submit" class="btn btn-primary btn-block btn-searchFlight" value="Procurar Voo">
 											</div>
 										</div>
 									 </div>
 
 									 <div role="tabpanel" class="tab-pane" id="hotels">
 									 	<div class="row">
+											 <form action="/resultadosdabusca" method="get">
 											<div class="col-xxs-12 col-xs-12 mt">
 												<div class="input-field">
 													<label for="from">Cidade:</label>
-													<input type="text" class="form-control" id="placescomplete" placeholder="Los Angeles, USA"/>
+													<input type="text" class="form-control" id="placescomplete" placeholder="Los Angeles, USA" name="cidade"/>
 												</div>
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt alternate">
 												<div class="input-field">
 													<label for="date-start">Check-in:</label>
-													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
+													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy" name="checkin"/>
 												</div>
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt alternate">
 												<div class="input-field">
 													<label for="date-end">Check Out:</label>
-													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
+													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy" name="checkout"/>
 												</div>
 											</div>
-											<div class="col-sm-12 mt">
-												<section>
-													<label for="class">Quartos:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="economy">1</option>
-														<option value="first">2</option>
-														<option value="business">3</option>
-													</select>
-												</section>
-											</div>
+											
 											<div class="col-xxs-12 col-xs-6 mt">
 												<section>
 													<label for="class">Adultos:</label>
-													<select class="cs-select cs-skin-border">
+													<select class="cs-select cs-skin-border" name="adultos">
 														<option value="" disabled selected>1</option>
 														<option value="1">1</option>
 														<option value="2">2</option>
@@ -228,22 +194,11 @@
 													</select>
 												</section>
 											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
-												<section>
-													<label for="class">Crianças:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="0">0</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-													</select>
-												</section>
-											</div>
+											
 											<div class="col-xs-12">
 												<input type="submit" class="btn btn-primary btn-block" value="Procurar Hotel">
 											</div>
+											</form>
 										</div>
 									 </div>
 
@@ -334,7 +289,7 @@
 
 		</div>
 		
-		<div id="fh5co-tours" class="fh5co-section-gray">
+		<!--<div id="fh5co-tours" class="fh5co-section-gray">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
@@ -381,7 +336,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		
 		<div id="fh5co-destination">
@@ -390,28 +345,28 @@
 					<div class="col-md-12">
 						<ul id="fh5co-destination-list" class="animate-box">
 							<li class="one-forth text-center" style="background-image: url(images/losangeles.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/los-angeles-california-estados-unidos">
 									<div class="case-studies-summary">
 										<h2>Los Angeles</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/hongkong.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/hong-kong-hong-kong-1">
 									<div class="case-studies-summary">
 										<h2>Hongkong</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/italia.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/milao-italia">
 									<div class="case-studies-summary">
 										<h2>Itália</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/filipinas.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/cebu-filipinas">
 									<div class="case-studies-summary">
 										<h2>Filipinas</h2>
 									</div>
@@ -419,7 +374,7 @@
 							</li>
 
 							<li class="one-forth text-center" style="background-image: url(images/japao.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/toquio-japao">
 									<div class="case-studies-summary">
 										<h2>Japão</h2>
 									</div>
@@ -429,40 +384,40 @@
 								<div class="title-bg">
 									<div class="case-studies-summary">
 										<h2>Destinos Mais Populares</h2>
-										<span><a href="#">Ver todos os Destinos</a></span>
+										
 									</div>
 								</div>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/paris.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/paris-franca">
 									<div class="case-studies-summary">
 										<h2>Paris</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/singapura.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/singapura-cingapura">
 									<div class="case-studies-summary">
 										<h2>Singapura</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/madagascar.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/antananarivo-madagascar">
 									<div class="case-studies-summary">
 										<h2>Madagascar</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/egito.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/cairo-egito">
 									<div class="case-studies-summary">
 										<h2>Egito</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-forth text-center" style="background-image: url(images/indonesia.jpg); ">
-								<a href="#">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/jogjacarta-indonesia">
 									<div class="case-studies-summary">
 										<h2>Indonésia</h2>
 									</div>
@@ -486,9 +441,9 @@
 					<div class="box-testimony animate-box">
 						<blockquote>
 							<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-							<p>&ldquo;Muito prático e intuitivo! Consegui pegar o voo mais barato para minhas férias.&rdquo;</p>
+							<p>&ldquo;{{feedbacks[feedbacks.length-3].text}}&rdquo;</p>
 						</blockquote>
-						<p class="author">John Wick <span class="subtext">Autônomo</span></p>
+						<p class="author">{{feedbacks[feedbacks.length-3].name}} <span class="subtext"></span></p>
 					</div>
 					
 				</div>
@@ -496,9 +451,9 @@
 					<div class="box-testimony animate-box">
 						<blockquote>
 							<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-							<p>&ldquo;Perfeitos! Consegui um pacote com um preço ótimo, ansiosa para que dê tudo certo na viagem!&rdquo;</p>
+							<p>&ldquo;{{feedbacks[feedbacks.length-1].text}}&rdquo;</p>
 						</blockquote>
-						<p class="author">Michaela Stone  <span class="subtext">Detetive</span></p>
+						<p class="author">{{feedbacks[feedbacks.length-1].name}}<span class="subtext"></span></p>
 					</div>
 					
 					
@@ -507,60 +462,17 @@
 					<div class="box-testimony animate-box">
 						<blockquote>
 							<span class="quote"><span><i class="icon-quotes-right"></i></span></span>
-							<p>&ldquo;Convenci minha empresa a comprar o voo para a Malásia com vocês, foi um ótimo negócio!&rdquo;</p>
+							<p>&ldquo;{{feedbacks[feedbacks.length-2].text}}&rdquo;</p>
 						</blockquote>
-						<p class="author">Chuck Noland <span class="subtext">Executivo</span></p>
+						<p class="author">{{feedbacks[feedbacks.length-2].name}}<span class="subtext"></span></p>
 					</div>
 					
 				</div>
 			</div>
 		</div>
 	</div>
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row row-bottom-padded-md">
-						<div class="col-md-4 col-sm-4 col-xs-12 fh5co-footer-link">
-							<h3>Sobre nós</h3>
-							<p>Estudantes de Sistemas de Informação que gostam de novidades, desenvolvemos esse site para o curso DSID, ministrado pelo professor Fantinato.</p>
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-12 fh5co-footer-link">
-							<h3>Top Voos</h3>
-							<ul>
-								<li><a href="#">Nova York</a></li>
-								<li><a href="#">Dubai</a></li>
-								<li><a href="#">Bangkok</a></li>
-								<li><a href="#">Tókio</a></li>
-								<li><a href="#">Miami</a></li>
-							</ul>
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-12 fh5co-footer-link">
-							<h3>Top Hotéis</h3>
-							<ul>
-								<li><a href="#">Boracay Hotel</a></li>
-								<li><a href="#">Dubai Hotel</a></li>
-								<li><a href="#">Singapore Hotel</a></li>
-								<li><a href="#">Manila Hotel</a></li>
-							</ul>
-						</div>
-						
-					</div>
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-facebook2"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
-								<a href="#"><i class="icon-youtube"></i></a>
-							</p>
-							<p>Copyright 2016 Free Html5 <a href="#">Module</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-
+		
+	{% include "partials/footer.html" %}
 	
 
 	</div>
@@ -613,6 +525,9 @@
 	
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
+	<!-- Search Flight -->
+	<script src="js/searchFlights.js"></script>
 
 	</body>
 </html>

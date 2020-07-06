@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html class="no-js"> 
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Voos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+  
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<!-- CS Select -->
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-border.css">
+	<link rel="stylesheet" href="css/iatacomplete.css">
+	
+	<link rel="stylesheet" href="css/style.css"> 
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+
+		{% include "partials/header.html" %}
+
+		<!-- end:header-top -->
+	
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/back_3.jpg);">
+				<div class="desc">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-5 col-md-5">
+								<div class="tabulation animate-box">
+
+								  <!-- Nav tabs -->
+								   <ul class="nav nav-tabs" role="tablist">
+								      <li role="presentation" class="active">
+								      	<a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">Voos</a>
+								      </li>
+								      
+								      
+								   </ul>
+
+								   <!-- Tab panes -->
+									<div class="tab-content">
+									 <div role="tabpanel" class="tab-pane active" id="flights">
+										<div class="row">
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">De:</label>
+													<input type="text" class="form-control autocomplete" id="from-place" placeholder="São Paulo, BRA" value="GRU"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">Para:</label>
+													<input type="text" class="form-control autocomplete" id="to-place" placeholder="Miami, USA" value="MIA"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-start">Ida:</label>
+													<input type="text" class="form-control" id="date-start" placeholder="dd/mm/yyyy" value="15/07/2020"/>
+												</div>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt alternate">
+												<div class="input-field">
+													<label for="date-end">Volta:</label>
+													<input type="text" class="form-control" id="date-end" placeholder="dd/mm/yyyy" value="23/07/2020"/>
+												</div>
+											</div>
+											<div class="col-sm-12 mt">
+												<section>
+													<label for="class">Classe:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected>Econômica</option>
+														<option value="economy">Econômica</option>
+														<option value="first">Primeira</option>
+														<option value="business">Executiva</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Adultos:</label>
+													<select class="cs-select cs-skin-border" id="adults">
+														<option value="" disabled selected>1</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xxs-12 col-xs-6 mt">
+												<section>
+													<label for="class">Crianças:</label>
+													<select class="cs-select cs-skin-border" id="children">
+														<option value="" disabled selected>1</option>
+														<option value="0">0</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+											<div class="col-xs-12">
+												<input type="submit" class="btn btn-primary btn-block btn-searchFlight" value="Procurar Voo">
+											</div>
+										</div>
+									 </div>
+
+
+
+
+									</div>
+
+								</div>
+							</div>
+							<div class="desc2 animate-box">
+								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
+									
+									<h2>Encontre os voos mais Baratos!</h2>
+									<h3>Aqui você monta sua viagem dos sonhos <br> <br> Sem preocupação</h3>
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div id="fh5co-destination">
+			<div class="tour-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<ul id="fh5co-destination-list" class="animate-box">
+							<li class="one-forth text-center" style="background-image: url(images/voosul.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/tiles/sao-paulo-sao-paulo-brasil/rio-grande-do-sul-brasil,santa-catarina-brasil,parana-brasil">
+									<div class="case-studies-summary">
+										<h2>Sul</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/voonordeste.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/fortaleza-ceara-brasil">
+									<div class="case-studies-summary">
+										<h2>Nordeste</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/voocentrooeste.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/tiles/sao-paulo-sao-paulo-brasil/mato-grosso-brasil">
+									<div class="case-studies-summary">
+										<h2>Centro-oeste</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/voonorte.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/tiles/sao-paulo-sao-paulo-brasil/amazonas-brasil">
+									<div class="case-studies-summary">
+										<h2>Norte</h2>
+									</div>
+								</a>
+							</li>
+
+							<li class="one-forth text-center" style="background-image: url(images/voosudeste.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/tiles/sao-paulo-sao-paulo-brasil/rio-de-janeiro-rio-de-janeiro-brasil,sao-paulo-brasil,minas-gerais-brasil">
+									<div class="case-studies-summary">
+										<h2>Sudeste</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-half text-center">
+								<div class="title-bg">
+									<div class="case-studies-summary">
+										<h2>Encontre os melhores destinos</h2>
+										
+									</div>
+								</div>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/paris.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/results/sao-paulo-sao-paulo-brasil/paris-franca">
+									<div class="case-studies-summary">
+										<h2>Europa</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/singapura.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/tiles/sao-paulo-sao-paulo-brasil/asia">
+									<div class="case-studies-summary">
+										<h2>Ásia</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/voooceania.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/tiles/sao-paulo-sao-paulo-brasil/oceania">
+									<div class="case-studies-summary">
+										<h2>Oceania</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/voocaribe.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/tiles/sao-paulo-sao-paulo-brasil/aruba">
+									<div class="case-studies-summary">
+										<h2>Caribe</h2>
+									</div>
+								</a>
+							</li>
+							<li class="one-forth text-center" style="background-image: url(images/vooAS.jpg); ">
+								<a href="https://www.kiwi.com/br/pesquisar/tiles/sao-paulo-sao-paulo-brasil/chile,argentina,peru">
+									<div class="case-studies-summary">
+										<h2>América do Sul</h2>
+									</div>
+								</a>
+							</li>
+						</ul>		
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</div>
+		
+
+	{% include "partials/footer.html" %}
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Date Picker -->
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<!-- CS Select -->
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+
+	<!-- Para buscar IATAS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.1/lodash.min.js"></script>
+	<script src="https://unpkg.com/fuse.js@2.5.0/src/fuse.min.js"></script>
+	<script src="https://screenfeedcontent.blob.core.windows.net/html/airports.js"></script>
+	<script src="js/iatacomplete.js"></script>
+	
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Search Flight -->
+	<script src="js/searchFlights.js"></script>
+
+	</body>
+</html>
+

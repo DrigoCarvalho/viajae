@@ -1891,6 +1891,7 @@ div.cs-select span {
   .col-xxs-12 {
     float: none;
     width: 100%;
+    display: flow-root;
   }
 }
 
