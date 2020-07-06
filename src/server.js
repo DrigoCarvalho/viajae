@@ -1,9 +1,11 @@
 const express = require("express")
+const cors = require("cors")
+
 const server = express()
 
 const db = require("./database/db")
 
-
+server.use(cors())
 server.use(express.static("public"))
 
 server.use(express.urlencoded({ extended: true }))
@@ -74,4 +76,4 @@ server.get("/resultadosdabusca", (req,res) => {
     return res.render("hotelsresults.html")
 })
 
-server.listen(3000)
+server.listen(process.env.PORT || 3000)

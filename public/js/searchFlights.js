@@ -53,7 +53,7 @@ window.addEventListener('click', async (e) => {
 window.addEventListener('load', (e) => {
     
     console.log(window.location.href)
-    if (window.location.href == "http://localhost:3000/resultadosdevoos") {
+    if (window.location.href == "https://viajae.herokuapp.com/resultadosdevoos") {
         showResults()
     }
 })
